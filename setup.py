@@ -1,14 +1,14 @@
 import os
 import sys
 
-from setuptools import setup, find_packages
+from setuptools import setup
 from setuptools.command.test import test as TestCommand
 from codecs import open
 
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-packages = find_packages()
+modules = ['flask_pretty']
 
 requires = [
     'beautifulsoup4',
@@ -21,7 +21,7 @@ tests_require = [
 ]
 
 about = {}
-with open(os.path.join(here, 'flask_pretty', '__about__.py'), mode='r', encoding='utf-8') as f:
+with open(os.path.join(here, '__about__.py'), mode='r', encoding='utf-8') as f:
     exec(f.read(), about)
 
 with open('README.rst', mode='r', encoding='utf-8') as f:
@@ -36,7 +36,7 @@ setup(
     url=about['__url__'],
     license=about['__license__'],
     long_description=readme,
-    packages=packages,
+    py_modules=modules,
     install_requires=requires,
     tests_require=tests_require,
     zip_safe=False,

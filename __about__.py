@@ -1,4 +1,4 @@
-__title__ = 'flask-pretty'
+__title__ = 'Flask-Pretty'
 __version__ = '0.0.1'
 __description__ = 'Flask extension to output prettified HTML pages'
 __author__ = 'Romain Clement'

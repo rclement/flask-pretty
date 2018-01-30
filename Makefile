@@ -22,12 +22,10 @@ install:
 	python setup.py install
 
 docs-generate:
-	@sphinx-apidoc -F -e -o $(DOCS_DIR) $(PROJECT)
-	@sphinx-build -b html $(DOCS_DIR) $(DOCS_DIR)/_build/html
+	@sphinx-quickstart
 
 docs:
-	@sphinx-apidoc -f -e -o $(DOCS_DIR) $(PROJECT)
-	@sphinx-build -b html $(DOCS_DIR) $(DOCS_DIR)/_build/html
+	@make -C docs html
 
 test:
 	cd tests
