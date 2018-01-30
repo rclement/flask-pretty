@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/rclement/flask-pretty.svg?branch=develop)](https://travis-ci.org/rclement/flask-pretty)
 [![Coverage Status](https://coveralls.io/repos/github/rclement/flask-pretty/badge.svg?branch=develop)](https://coveralls.io/github/rclement/flask-pretty?branch=develop)
+[![Documentation Status](https://readthedocs.org/projects/flask-pretty/badge/?version=latest)](http://flask-pretty.readthedocs.io/en/latest/?badge=latest)
 
 Flask-Pretty is a Flask extension to output prettified HTML pages to ease the
 development process of HTML templates.
