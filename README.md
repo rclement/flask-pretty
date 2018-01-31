@@ -7,8 +7,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/rclement/flask-pretty/badge.svg?branch=master)](https://coveralls.io/github/rclement/flask-pretty?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/flask-pretty/badge/?version=master)](http://flask-pretty.readthedocs.io/en/master/)
 
-Flask-Pretty is a Flask extension to output prettified HTML pages to ease the
-development process of HTML templates.
+Flask-Pretty is a [Flask](http://flask.pocoo.org) extension to output prettified
+HTML pages to ease the development process of HTML templates.
 However, HTML prettifying should only be used for development purposes only.
 For production purposes, HTML minifying should be used instead
 (for instance by using [Flask-HTMLmin](https://github.com/hamidfzm/Flask-HTMLmin)).

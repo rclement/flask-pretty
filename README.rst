@@ -4,11 +4,12 @@ Flask-Pretty
 |PyPI Version| |PyPI License| |PyPI Versions| |Build Status| |Coverage
 Status| |Documentation Status|
 
-Flask-Pretty is a Flask extension to output prettified HTML pages to
-ease the development process of HTML templates. However, HTML
-prettifying should only be used for development purposes only. For
-production purposes, HTML minifying should be used instead (for instance
-by using `Flask-HTMLmin <https://github.com/hamidfzm/Flask-HTMLmin>`__).
+Flask-Pretty is a `Flask <http://flask.pocoo.org>`__ extension to output
+prettified HTML pages to ease the development process of HTML templates.
+However, HTML prettifying should only be used for development purposes
+only. For production purposes, HTML minifying should be used instead
+(for instance by using
+`Flask-HTMLmin <https://github.com/hamidfzm/Flask-HTMLmin>`__).
 
 The underlying HTML prettifying process is provided by
 `BeautifulSoup <https://www.crummy.com/software/BeautifulSoup>`__.
