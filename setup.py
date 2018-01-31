@@ -27,6 +27,9 @@ with open(os.path.join(here, '__about__.py'), 'r', 'utf-8') as f:
 with open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
 
+with open('HISTORY.rst', 'r', 'utf-8') as f:
+    history = f.read()
+
 
 class ToxTest(TestCommand):
 
@@ -50,7 +53,7 @@ setup(
     author_email=about['__author_email__'],
     url=about['__url__'],
     license=about['__license__'],
-    long_description=readme,
+    long_description=readme + '\n\n' + history,
     py_modules=modules,
     install_requires=requires,
     tests_require=tests_require,
