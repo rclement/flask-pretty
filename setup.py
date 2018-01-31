@@ -21,11 +21,14 @@ tests_require = [
 ]
 
 about = {}
-with open(os.path.join(here, '__about__.py'), mode='r', encoding='utf-8') as f:
+with open(os.path.join(here, '__about__.py'), 'r', 'utf-8') as f:
     exec(f.read(), about)
 
-with open('README.rst', mode='r', encoding='utf-8') as f:
+with open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
+
+with open('HISTORY.rst', 'r', 'utf-8') as f:
+    history = f.read()
 
 
 class ToxTest(TestCommand):
@@ -50,7 +53,7 @@ setup(
     author_email=about['__author_email__'],
     url=about['__url__'],
     license=about['__license__'],
-    long_description=readme,
+    long_description=readme + '\n\n' + history,
     py_modules=modules,
     install_requires=requires,
     tests_require=tests_require,
@@ -61,9 +64,14 @@ setup(
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ]
