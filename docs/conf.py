@@ -24,12 +24,12 @@
 # -- Retrieve project about's ---------------------------------------------
 
 import os
+from codecs import open
 
 here = os.path.abspath(os.path.dirname(__file__))
 
 about = {}
-with open(os.path.join(here, '..', '__about__.py'),
-          mode='r', encoding='utf-8') as f:
+with open(os.path.join(here, '..', '__about__.py'), 'r', 'utf-8') as f:
     exec(f.read(), about)
 
 # -- General configuration ------------------------------------------------

@@ -1,6 +1,8 @@
 import os
 import unittest
 
+from codecs import open
+
 from flask import Flask, render_template
 from flask.json import jsonify
 from flask_pretty import Prettify
@@ -8,8 +10,7 @@ from flask_pretty import Prettify
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 templates_path = os.path.join(current_dir, 'templates')
-with open(os.path.join(templates_path, 'pretty.html'),
-          mode='r', encoding='utf-8') as f:
+with open(os.path.join(templates_path, 'pretty.html'), 'r', 'utf-8') as f:
     pretty_template = f.read()
     pretty_template = pretty_template.encode('utf-8')
 
