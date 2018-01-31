@@ -1,7 +1,8 @@
 Flask-Pretty
 ============
 
-|Build Status| |Coverage Status| |Documentation Status|
+|PyPI Version| |PyPI License| |PyPI Versions| |Build Status| |Coverage
+Status| |Documentation Status|
 
 Flask-Pretty is a Flask extension to output prettified HTML pages to
 ease the development process of HTML templates. However, HTML
@@ -54,9 +55,15 @@ The MIT License (MIT)
 
 Copyright (c) 2018 Romain Clement
 
-.. |Build Status| image:: https://travis-ci.org/rclement/flask-pretty.svg?branch=develop
+.. |PyPI Version| image:: https://img.shields.io/pypi/v/flask-pretty.svg
+   :target: https://pypi.python.org/pypi/flask-pretty
+.. |PyPI License| image:: https://img.shields.io/pypi/l/flask-pretty.svg
+   :target: https://pypi.python.org/pypi/flask-pretty
+.. |PyPI Versions| image:: https://img.shields.io/pypi/pyversions/flask-pretty.svg
+   :target: https://pypi.python.org/pypi/flask-pretty
+.. |Build Status| image:: https://travis-ci.org/rclement/flask-pretty.svg?branch=master
    :target: https://travis-ci.org/rclement/flask-pretty
-.. |Coverage Status| image:: https://coveralls.io/repos/github/rclement/flask-pretty/badge.svg?branch=develop
-   :target: https://coveralls.io/github/rclement/flask-pretty?branch=develop
-.. |Documentation Status| image:: https://readthedocs.org/projects/flask-pretty/badge/?version=latest
-   :target: http://flask-pretty.readthedocs.io/en/latest/?badge=latest
+.. |Coverage Status| image:: https://coveralls.io/repos/github/rclement/flask-pretty/badge.svg?branch=master
+   :target: https://coveralls.io/github/rclement/flask-pretty?branch=master
+.. |Documentation Status| image:: https://readthedocs.org/projects/flask-pretty/badge/?version=master
+   :target: http://flask-pretty.readthedocs.io/en/master/
