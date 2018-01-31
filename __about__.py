@@ -1,5 +1,5 @@
 __title__ = 'Flask-Pretty'
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 __description__ = 'Flask extension to output prettified HTML pages'
 __author__ = 'Romain Clement'
 __author_email__ = 'r.clement88@gmail.com'
