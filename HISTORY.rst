@@ -1,8 +1,8 @@
 Release History
 ===============
 
-dev
----
+0.2.0 (2018-01-31)
+------------------
 
 - Official support for Python 2.7
 - Improved README badges
