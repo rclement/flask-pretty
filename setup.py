@@ -27,6 +27,21 @@ with open(os.path.join(here, '__about__.py'), mode='r', encoding='utf-8') as f:
 with open('README.rst', mode='r', encoding='utf-8') as f:
     readme = f.read()
 
+
+class ToxTest(TestCommand):
+
+    def finalize_options(self):
+        TestCommand.finalize_options(self)
+        self.test_args = []
+        self.test_suite = True
+
+    def run_tests(self):
+        # import here, cause outside the eggs aren't loaded
+        import tox
+        errcode = tox.cmdline(self.test_args)
+        sys.exit(errcode)
+
+
 setup(
     name=about['__title__'],
     version=about['__version__'],
@@ -39,6 +54,7 @@ setup(
     py_modules=modules,
     install_requires=requires,
     tests_require=tests_require,
+    cmdclass={'test': ToxTest},
     zip_safe=False,
     include_package_data=True,
     platforms='any',

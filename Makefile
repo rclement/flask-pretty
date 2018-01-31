@@ -28,15 +28,13 @@ docs:
 	@make -C docs html
 
 test:
-	cd tests
-	py.test -v --cov=$(PROJECT) --cov-report term-missing $(TEST_DIR)
-	cd ..
+	cd $(TEST_DIR) && py.test -v --cov=$(PROJECT) --cov-report term-missing . && cd ..
 
 test-all:
 	python setup.py test
 
 lint:
-	pipenv run flake8 --ignore=F401 $(PROJECT)
+	pipenv run flake8 --ignore=F401 flask_pretty.py __about__.py tests
 
 readme-rst:
 	pandoc --from=markdown --to=rst README.md -o README.rst

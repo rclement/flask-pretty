@@ -1,0 +1,3 @@
+include __about__.py README.md LICENSE
+include docs/conf.py docs/index.rst docs/make.bat docs/Makefile
+graft tests
