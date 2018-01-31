@@ -28,7 +28,7 @@ docs:
 	@make -C docs html
 
 test:
-	cd $(TEST_DIR) && py.test -v --cov=$(PROJECT) --cov-report term-missing . && cd ..
+	pipenv run py.test -v --cov=$(PROJECT) --cov-report term-missing $(TEST_DIR)
 
 test-all:
 	python setup.py test
