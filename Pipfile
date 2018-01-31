@@ -1,0 +1,24 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+"beautifulsoup4" = "*"
+flask = "*"
+
+
+[dev-packages]
+
+coverage = "*"
+docutils = "*"
+"flake8" = "*"
+flask-sphinx-themes = "*"
+pytest = "*"
+pytest-cov = "*"
+sphinx = "*"
+tox = "*"
+"e1839a8" = {path = ".", editable = true}

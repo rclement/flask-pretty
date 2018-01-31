@@ -1,0 +1,4 @@
+include __about__.py README.md LICENSE
+include docs/conf.py docs/index.rst docs/make.bat docs/Makefile
+recursive-include tests *.html *.py
+global-exclude *.pyc

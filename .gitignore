@@ -99,3 +99,19 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Sphinx documentation
+docs/_build/
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and editors
+.idea/
+*.swp
